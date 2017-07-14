@@ -1,6 +1,7 @@
 #!/bin/sh
 
-yum install -y ctags cmake gcc-c++ python-devel
+#yum install -y ctags cmake gcc-c++ python-devel
+apt-get install ctags cmake
 
 if ! ctags --list-languages | grep -qi python; then
     echo "Fail to install ctags!"
